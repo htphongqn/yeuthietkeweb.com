@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="YeuThietKeWeb.Master.Index" %>
+
+<%@ Register src="../UIs/Support.ascx" tagname="Support" tagprefix="uc1" %>
+<%@ Register src="../UIs/Header.ascx" tagname="Header" tagprefix="uc2" %>
+<%@ Register src="../UIs/MenuMobile.ascx" tagname="MenuMobile" tagprefix="uc3" %>
+<%@ Register src="../UIs/MenuTop.ascx" tagname="MenuTop" tagprefix="uc4" %>
+<%@ Register src="../UIs/Slide.ascx" tagname="Slide" tagprefix="uc5" %>
+<%@ Register src="../UIs/HomeCate.ascx" tagname="HomeCate" tagprefix="uc6" %>
+<%@ Register src="../UIs/Intro.ascx" tagname="Intro" tagprefix="uc7" %>
+<%@ Register src="../UIs/HomeQuestions.ascx" tagname="HomeQuestions" tagprefix="uc8" %>
+<%@ Register src="../UIs/HomeAdvisory.ascx" tagname="HomeAdvisory" tagprefix="uc9" %>
+<%@ Register src="../UIs/NewsEvent.ascx" tagname="NewsEvent" tagprefix="uc10" %>
+<%@ Register src="../UIs/InfoContact.ascx" tagname="InfoContact" tagprefix="uc11" %>
+<%@ Register src="../UIs/Facebook.ascx" tagname="Facebook" tagprefix="uc12" %>
+<%@ Register src="../UIs/Static.ascx" tagname="Static" tagprefix="uc13" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/vi-vn/Styles/template.css" type="text/css" />
+    <link rel="stylesheet" href="/vi-vn/Styles/skeleton.css" type="text/css" />
+    <script type="text/javascript" src="/vi-vn/Scripts/jquery-1.8.3.min.js"></script>
+    <!---Hoz menu-->
+    <link href="/vi-vn/Styles/nav_menu.css" rel="stylesheet" type="text/css" />
+    <!--Nivo Slider Responsive-->
+    <link rel="stylesheet" href="/vi-vn/Styles/nivo-slider.css" type="text/css" media="screen" />
+    <!--Logo-->
+    <link href="/vi-vn/Styles/lib.css" rel="stylesheet" type="text/css" />
+    <!--Owl Carousel-->
+    <link href="/vi-vn/Styles/owl.carousel.css" rel="stylesheet">
+    <link href="/vi-vn/Styles/owl.theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vi-vn/Styles/layout.css" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--Support-->
+    <uc1:Support ID="Support1" runat="server" />
+    <!--End Support-->
+    <!--Header-->
+    <uc2:Header ID="Header1" runat="server" />
+    <!--End Header-->
+    <!--Top Menu-->
+    <div id="nav_wrap" class="cf">
+        <!--MenuMobile-->
+        <uc3:MenuMobile ID="MenuMobile1" runat="server" />
+        <!--End MenuMobile-->
+        <!--MenuTop-->
+        <uc4:MenuTop ID="MenuTop1" runat="server" />
+        <!--End MenuTop-->
+    </div>
+    <!--end Top Menu-->
+    <!--Slide-->
+    <uc5:Slide ID="Slide1" runat="server" />
+    <!--End Slide-->
+    <section id="main" class="container">
+      <!--HomeCate-->
+      <uc6:HomeCate ID="HomeCate1" runat="server" />
+      <!--end HomeCate-->
+      <!--Row Home-->
+      <div class="row_home">
+        <!--Intro-->
+        <uc7:Intro ID="Intro1" runat="server" />
+        <!--End Intro-->
+        <!--HomeQuestions-->
+        <uc8:HomeQuestions ID="HomeQuestions1" runat="server" />
+        <!--End HomeQuestions-->
+        <!--HomeAdvisory-->
+        <div class="four columns">
+            <div class="inside_row" id="advisory">
+                <uc9:HomeAdvisory ID="HomeAdvisory1" runat="server" />
+            </div>
+        </div>
+        <!--End HomeAdvisory-->
+      </div>
+      <!--end Row Home-->
+      <!--Row Home-->
+      <div class="row_home row_footer">
+        <!--NewsEvent-->
+        <uc10:NewsEvent ID="NewsEvent1" runat="server" />
+        <!--End NewsEvent-->
+        <!--InfoContact-->
+        <uc11:InfoContact ID="InfoContact1" runat="server" />
+        <!--End InfoContact-->
+        <!--Facebook-->
+        <uc12:Facebook ID="Facebook1" runat="server" />
+        <!--End Facebook-->
+      </div>
+      <!--end Row Home-->
+      <!-- Begin of footer-->
+      <footer>
+        <!--Copyright-->
+        <div class="five columns">Copyright © 2015 By YeuThietKeWeb.com </div>
+        <!--end Copyright-->
+        <!--Static-->
+        <uc13:Static ID="Static1" runat="server" />
+        <!--End Static-->
+      </footer>
+      <!-- End of footer-->
+    </section>
+    <!-- back to top -->
+    <script type="text/javascript" src="/vi-vn/Scripts/scrolltopcontrol.js"></script>
+    <div id="toTop">
+    </div>
+    <script type="text/javascript" src="/vi-vn/Scripts/jquery.nivo.slider.pack.js"></script>
+    <!-- Owl Carousel Assets -->
+    <script src="/vi-vn/Scripts/owl.carousel.js"></script>
+    <script type="text/javascript" src="/vi-vn/Scripts/all_scripts.js"></script>
+    </form>
+</body>
+</html>
