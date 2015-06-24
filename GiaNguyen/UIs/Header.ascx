@@ -3,7 +3,7 @@
 
 <header>
   <div class="container">
-    <div id="logo" class="four columns"> &nbsp;
+    <%--<div id="logo" class="four columns"> &nbsp;
       <div class="logo_rotate">
         <div class="CircleBlock">
           <div class="innerCircle">
@@ -30,14 +30,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>--%>
     <asp:Repeater ID="Rpbanner" runat="server">
         <ItemTemplate>
             <%# Getbanner(Eval("BANNER_TYPE"),Eval("BANNER_FIELD1"), Eval("BANNER_ID"), Eval("BANNER_FILE"))%>
         </ItemTemplate>
     </asp:Repeater>
     <!--Search Tool-->
-    <div class="three columns" id="header_r">
+    <div class="three columns" id="header_r" style="float:right;">
       <div id="search_head">
         <input name="txtSearch" type="text" id="txtSearch" alt="Search" class="input_Search" placeholder="Từ khóa tìm kiếm" runat="server"/>
         <asp:LinkButton ID="btnSearch" runat="server" class="search_btn" 

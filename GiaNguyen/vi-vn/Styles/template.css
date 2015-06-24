@@ -112,7 +112,7 @@ input {
 }
 .btn_web {
 	display: block;
-	background: #a22f89;
+	background: #1B62A9;
 	padding: 7px 10px;
 	margin-bottom: 20px;
 	color: #FFFFFF !important;
@@ -281,7 +281,7 @@ header {
 }
 .box_Tab span {
 	font-size: 20px;
-	color: #bc0095;
+	color: #1B62A9;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -342,7 +342,7 @@ header {
 div.tab-support {
 	height: 40px;
 	line-height: 40px;
-	background-color: #bd319d;
+	background-color: #1B62A9;
 	font-size: 1em;
 	font-weight: bold;
 	color: white;
@@ -834,7 +834,7 @@ a.opinion {
 footer {
 	clear: both;
 	padding: 10px 15px;
-	background: #c752aa url(../Images/menuBg.gif) 0 0 repeat-x;
+	background: #1B62A9;
 	color: #FFFFFF
 }
 footer p {
@@ -858,7 +858,7 @@ footer p {
 	padding-bottom: 25px;
 }
 .col_menuFooter h3 {
-	background: url(../Images/menuBg.gif) 0 0 repeat-x;
+	background: #1B62A9;
 	-moz-box-shadow: 0 5px 5px #b8b8b8;
 	-webkit-box-shadow: 0 5px 5px #b8b8b8;
 	box-shadow: 0 5px 5px #b8b8b8;
