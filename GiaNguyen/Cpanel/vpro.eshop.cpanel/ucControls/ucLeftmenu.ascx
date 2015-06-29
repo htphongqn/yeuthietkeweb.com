@@ -99,7 +99,7 @@
 
 	<div class="menutitle" onclick="SwitchMenu('sub1')">
         <img src="../Images/Button_Admin/my_projects_folder.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
-        Category</div>
+        Categories</div>
 	<span class="submenu" id="sub1">
 		<i class="ilist"></i><a href="category_list.aspx">List Categories</a><br />
         <i class="iedit"></i><a href="category.aspx">Add Category</a>
@@ -107,17 +107,17 @@
 
     <div class="menutitle" onclick="SwitchMenu('sub2')">
         <img src="../Images/Button_Admin/c_news.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
-        New</div>
+        News</div>
 	<span class="submenu" id="sub2">
-		<i class="ilist"></i><a href="news_list.aspx?type=0">List New</a><br />
+		<i class="ilist"></i><a href="news_list.aspx?type=0">List News</a><br />
         <i class="iedit"></i><a href="news.aspx?type=0">Add New</a>
 	</span>
 
     <div class="menutitle" onclick="SwitchMenu('sub3')">
         <img src="../Images/Button_Admin/c_products.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
-        Product</div>
+        Products</div>
 	<span class="submenu" id="sub3">
-		<i class="ilist"></i><a href="news_list.aspx?type=1">List Product</a><br />
+		<i class="ilist"></i><a href="news_list.aspx?type=1">List Products</a><br />
         <i class="iedit"></i><a href="news.aspx?type=1">Add Product</a>
 	</span>
 
@@ -125,7 +125,7 @@
         <img src="../Images/Button_Admin/advertising.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
         Banner</div>
 	<span class="submenu" id="sub4">
-		<i class="ilist"></i><a href="aditem_list.aspx">List Banner</a><br />
+		<i class="ilist"></i><a href="aditem_list.aspx">List Banners</a><br />
         <i class="iedit"></i><a href="aditem.aspx">Add Banner</a>
 	</span>
 
@@ -133,7 +133,7 @@
         <img src="../Images/Button_Admin/ThongTinLienHe.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
         Contact Information</div>
 	<span class="submenu" id="sub5">
-		<i class="ilist"></i><a href="contact_list.aspx">List Contact</a><br />
+		<i class="ilist"></i><a href="contact_list.aspx">List Contacts</a><br />
         <i class="iconfig"></i><a href="contact_config.aspx">Configuration Contact</a>
 	</span>
 
@@ -159,9 +159,9 @@
         <img src="../Images/Button_Admin/NguoiQuanTri.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
         Manager</div>
 	<span class="submenu" id="sub8">
-		<i class="ilist"></i><a href="group_list.aspx">List Group</a><br />
+		<i class="ilist"></i><a href="group_list.aspx">List Groups</a><br />
         <i class="iedit"></i><a href="groups.aspx">Add Group</a><br />
-        <i class="ilist"></i><a href="user_list.aspx">List User</a><br />
+        <i class="ilist"></i><a href="user_list.aspx">List Users</a><br />
         <i class="iedit"></i><a href="user.aspx">Add User</a>
 	</span>
 </div>
