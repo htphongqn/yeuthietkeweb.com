@@ -3,7 +3,7 @@
     ValidateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Cấu hình Footer - Sản phẩm | Vpro.Eshop</title>
+    <title>Cấu hình Footer - Product | Vpro.Eshop</title>
     <script src="../tiny_mce/tiny_mce.js" type="text/javascript"></script>
     <script type="text/javascript">
         tinyMCE.init({
@@ -135,12 +135,12 @@
         </div>--%>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="config_footer.aspx">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
     </div>

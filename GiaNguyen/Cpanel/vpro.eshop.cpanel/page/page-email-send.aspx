@@ -47,10 +47,10 @@
                     Trợ giúp</div></asp:LinkButton>
         </div>--%>
         <div class="icon_function_Child">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false">
 				<img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-					Xóa</div>
+					Delete</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">

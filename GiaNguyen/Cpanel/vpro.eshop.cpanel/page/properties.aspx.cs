@@ -39,7 +39,7 @@ namespace vpro.eshop.cpanel.page
             {
                 ucHeader.HeaderLevel1 = "Thuộc tính";
                 ucHeader.HeaderLevel1_Url = "../page/properties_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật thuộc tính";
+                ucHeader.HeaderLevel2 = "Add new/Update thuộc tính";
                 ucHeader.HeaderLevel2_Url = "../page/properties.aspx";
 
                 getInfo();

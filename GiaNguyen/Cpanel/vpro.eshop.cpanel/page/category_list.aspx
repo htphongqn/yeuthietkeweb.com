@@ -2,7 +2,7 @@
     CodeBehind="category_list.aspx.cs" Inherits="vpro.eshop.cpanel.page.category_list" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>DS chuyên mục | Vpro.Eshop </title>
+    <title>DS Category | Vpro.Eshop </title>
     <script language="javascript">
                 <!--
         function ToggleAll(e, action) {
@@ -45,22 +45,22 @@
         <div class="icon_function_Child">
             <a href="category.aspx">
                 <img src="../Images/ICON_ADD.png" width="30" height="30" border="0" style="border: 0px" /><div>
-                    Thêm mới</div>
+                    Add New</div>
             </a>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false" OnClick="lbtDelete_Click"> <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div></asp:LinkButton>
+                    Delete</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="category_list.aspx">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
 
@@ -106,7 +106,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Tên chuyên mục" HeaderStyle-Width="92%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Tên Category" HeaderStyle-Width="92%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="CAT_NAME">
                                 <ItemTemplate>
@@ -128,7 +128,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Ngôn ngữ" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Language" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="CAT_LANGUAGE">
                                 <ItemTemplate>
@@ -138,7 +138,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Thứ tự" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Order" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="CAT_ORDER">
                                 <ItemTemplate>
@@ -150,7 +150,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Thứ tự trang chủ" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Order trang chủ" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="CAT_PERIOD_ORDER">
                                 <ItemTemplate>

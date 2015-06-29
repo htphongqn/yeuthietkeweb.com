@@ -48,7 +48,7 @@ namespace vpro.eshop.cpanel.page
             {
                 ucHeader.HeaderLevel1 = "Kích cỡ";
                 ucHeader.HeaderLevel1_Url = "../page/size_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật kích cỡ";
+                ucHeader.HeaderLevel2 = "Add new/Update kích cỡ";
                 ucHeader.HeaderLevel2_Url = "../page/size.aspx";
 
                 SearchResult();
@@ -179,7 +179,7 @@ namespace vpro.eshop.cpanel.page
         {
             if (Utils.CIntDef(obj_id) == 1)
             {
-                return "Hiển thị";
+                return "Activate";
             }
             else
             {

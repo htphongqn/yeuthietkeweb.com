@@ -30,7 +30,7 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Cấu hình website";
+                ucHeader.HeaderLevel1 = "Config website";
                 ucHeader.HeaderLevel1_Url = "../page/config_meta.aspx";
                 ucHeader.HeaderLevel2 = "Seo Parameters";
                 ucHeader.HeaderLevel2_Url = "../page/config_meta.aspx";

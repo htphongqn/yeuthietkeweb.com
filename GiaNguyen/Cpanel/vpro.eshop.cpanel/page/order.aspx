@@ -4,7 +4,7 @@
     TagPrefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-	<title>Thông tin liên hệ | vpro.eshop</title>
+	<title>Contact Information | vpro.eshop</title>
         <link href="../Calendar/calendarStyle.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -17,26 +17,26 @@
 		</div>--%>
 		 <div class="icon_function_Child">
 			<asp:LinkButton ID="lbtSave" runat="server" onclick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-					Lưu</div></asp:LinkButton>
+					Save</div></asp:LinkButton>
 		</div>
 		<div class="icon_function_Child" id="dvDelete" runat="server">
-			<asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+			<asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Do you want delete?');"
 				CausesValidation="false">
 				<img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-					Xóa</div>
+					Delete</div>
 			</asp:LinkButton>
 		</div>
 		<div class="icon_function_Child">
 			<a href="#" onclick="javascript:document.location.reload(true);">
 				<img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-					Cập nhật</div>
+					Refesh</div>
 			</a>
 		</div>
 		<div class="icon_function_Child">
 			<a href="order_list.aspx">
 				<img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
 				<div>
-					Quay lại</div>
+					Back</div>
 			</a>
 		</div>
 	</div>
@@ -221,7 +221,7 @@
 								</ItemTemplate>
 								<ItemStyle HorizontalAlign="Center" CssClass="tdGridRow"></ItemStyle>
 							</asp:TemplateColumn>
-							<asp:TemplateColumn HeaderText="Sản phẩm" HeaderStyle-Width="25%" ItemStyle-Wrap="False"
+							<asp:TemplateColumn HeaderText="Product" HeaderStyle-Width="25%" ItemStyle-Wrap="False"
 								HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
 								SortExpression="NEWS_TITLE">
 								<ItemTemplate>

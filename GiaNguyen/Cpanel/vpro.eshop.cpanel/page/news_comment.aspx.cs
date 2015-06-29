@@ -56,7 +56,7 @@ namespace vpro.eshop.cpanel.page
             hplBack.HRef = "news.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = _cat_type == 0 ? "Tin tức" : "Sản phẩm";
+                ucHeader.HeaderLevel1 = _cat_type == 0 ? "New" : "Product";
                 ucHeader.HeaderLevel1_Url = "../page/news_list.aspx?type=" + _cat_type;
                 ucHeader.HeaderLevel2 = "Thông tin phản hồi";
                 ucHeader.HeaderLevel2_Url = "../page/news_comment.aspx?news_id=" + m_news_id + "&type=" + _cat_type;

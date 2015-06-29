@@ -54,13 +54,13 @@ namespace vpro.eshop.cpanel.page
             {
                 if (_type == 0)
                 {
-                    ucHeader.HeaderLevel1 = "Tin tức";
+                    ucHeader.HeaderLevel1 = "New";
                     ucHeader.HeaderLevel1_Url = "../page/news_list.aspx?type=0";
                     ucHeader.HeaderLevel2 = "Danh sách";
                     ucHeader.HeaderLevel2_Url = "../page/news_list.aspx?type=0";
                 }
                 else {
-                    ucHeader.HeaderLevel1 = "Sản phẩm";
+                    ucHeader.HeaderLevel1 = "Product";
                     ucHeader.HeaderLevel1_Url = "../page/news_list.aspx?type=1";
                     ucHeader.HeaderLevel2 = "Danh sách";
                     ucHeader.HeaderLevel2_Url = "../page/news_list.aspx?type=1";
@@ -107,7 +107,7 @@ namespace vpro.eshop.cpanel.page
         }
         public string getTypeNew(object obj_id)
         {
-            return (Utils.CIntDef(obj_id)==0)?"Tin tức":((Utils.CIntDef(obj_id)==1)?"Sản phẩm":"Khác");
+            return (Utils.CIntDef(obj_id)==0)?"New":((Utils.CIntDef(obj_id)==1)?"Product":"Khác");
         }
         public void Loadchuyenmuc()
         {
@@ -148,7 +148,7 @@ namespace vpro.eshop.cpanel.page
                     ddlCategory.DataBind();
 
                 }
-                ListItem l = new ListItem("------ Tất cả chuyên mục ------", "0", true);
+                ListItem l = new ListItem("------ Tất cả Category ------", "0", true);
                 l.Selected = true;
                 ddlCategory.Items.Insert(0, l);
 
@@ -244,12 +244,12 @@ namespace vpro.eshop.cpanel.page
 
         public string getStatus(object obj_status)
         {
-            return Utils.CIntDef(obj_status) == 0 ? "Ẩn" : "Hiển thị";
+            return Utils.CIntDef(obj_status) == 0 ? "Ẩn" : "Activate";
         }
 
         public string getLanguage(object News_Language)
         {
-            return Utils.CIntDef(News_Language) == 1 ? "Việt Nam" : "English";
+            return Utils.CIntDef(News_Language) == 1 ? "Viet Nam" : "English";
         }
 
         public string getDate(object News_PublishDate)
@@ -524,7 +524,7 @@ namespace vpro.eshop.cpanel.page
             //    {
             //        Send_Mail_Content(_sMailContent, item.MAIL_NAME);
             //    }
-            //    Response.Write("<script LANGUAGE='JavaScript' >alert('Thông báo: Tin tức đã được gửi thành công!');document.location='" + ResolveClientUrl("/cpanel/page/news_list.aspx") + "';</script>");
+            //    Response.Write("<script LANGUAGE='JavaScript' >alert('Thông báo: New đã được gửi thành công!');document.location='" + ResolveClientUrl("/cpanel/page/news_list.aspx") + "';</script>");
             //}
             //catch (Exception ex)
             //{

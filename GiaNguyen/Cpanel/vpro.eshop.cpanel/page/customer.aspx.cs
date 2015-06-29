@@ -49,7 +49,7 @@ namespace vpro.eshop.cpanel.page
         protected void lbtSave_Click(object sender, EventArgs e)
         {
             //if (CheckExits(txtCustomerUN.Value))
-            //    lblError.Text = "Đã tồn tại Tên đăng nhập, vui lòng nhập Tên đăng nhập khác.";
+            //    lblError.Text = "Đã tồn tại Tên Logon, vui lòng nhập Tên Logon khác.";
             //else
                 SaveInfo();
         }
@@ -57,7 +57,7 @@ namespace vpro.eshop.cpanel.page
         protected void lbtSaveNew_Click(object sender, EventArgs e)
         {
             //if (CheckExits(txtCustomerUN.Value))
-            //    lblError.Text = "Đã tồn tại Tên đăng nhập, vui lòng nhập Tên đăng nhập khác.";
+            //    lblError.Text = "Đã tồn tại Tên Logon, vui lòng nhập Tên Logon khác.";
             //else
                 SaveInfo("customer.aspx");
         }

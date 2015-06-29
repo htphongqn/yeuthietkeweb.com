@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>EShop V1.0</title>
+    <title>Cpanel Pro-v1.0</title>
     <link href="../Styles/Cpanel_Login.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Cpanel_Site.css" rel="stylesheet" type="text/css" />
     <script src="/Scripts/UtilitiesCpanel.js" type="text/javascript"></script>
@@ -24,18 +24,18 @@
                     <div id="menu_images">
                         <img src="../Images/m_folder.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/category_list.aspx">Chuyên mục</a></div>
+                        <a href="../page/category_list.aspx">Category</a></div>
                     <div id="menu_content">
-                        Chuyên mục là nơi khai báo thể hiện tất cả các menu trên website. Bao gồm menu trên,
+                        Category là nơi khai báo thể hiện tất cả các menu trên website. Bao gồm menu trên,
                         dưới, trái, phải....</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/Admin_news.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/news_list.aspx?type=0">Tin tức</a></div>
+                        <a href="../page/news_list.aspx?type=0">New</a></div>
                     <div id="menu_content">
-                        Thêm mới/ Cập nhật tất cả các bài viết trên website, các bài viết tin tức, giới thiệu</div>
+                        Thêm mới/ Cập nhật tất cả các bài viết trên website, các bài viết New, giới thiệu</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
@@ -52,7 +52,7 @@
                     <div id="menu_title">
                         <a href="../page/online_list.aspx">Danh sách HTTT</a></div>
                     <div id="menu_content">
-                        Danh sách hỗ trợ trực tuyến</div>
+                        Danh sách Support online</div>
                 </div>
                 <%--<div id="menu_child">
                     <div id="menu_images">
@@ -85,15 +85,15 @@
                     <div id="menu_images">
                         <img src="../Images/m_contact_info.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/contact_list.aspx">Thông tin liên hệ</a></div>
+                        <a href="../page/contact_list.aspx">Contact Information</a></div>
                     <div id="menu_content">
-                        Xem nhật ký thông tin liên hệ từ phía khách hàng gửi từ website.</div>
+                        Xem nhật ký Contact Information từ phía khách hàng gửi từ website.</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/app_product.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/news_list.aspx?type=1">Sản phẩm</a></div>
+                        <a href="../page/news_list.aspx?type=1">Product</a></div>
                     <div id="menu_content">
                         Thêm mới/ Cập nhật tất cả các bài viết trên website, các bài biết sảm phẩm, dịch vụ</div>
                 </div>

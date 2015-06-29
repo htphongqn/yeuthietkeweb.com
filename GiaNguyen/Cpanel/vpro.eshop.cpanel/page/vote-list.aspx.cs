@@ -250,7 +250,7 @@ namespace vpro.eshop.cpanel.page
 
         public string getLanguage(object Cat_Pos)
         {
-            return Utils.CIntDef(Cat_Pos) == 1 ? "Việt Nam" : "All";
+            return Utils.CIntDef(Cat_Pos) == 1 ? "Viet Nam" : "All";
         }
 
         #endregion

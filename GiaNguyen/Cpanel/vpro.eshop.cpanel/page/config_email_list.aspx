@@ -49,7 +49,7 @@
         <div class="icon_function_Child">
             <a href="units_list.aspx">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="boxinput">
@@ -93,7 +93,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Mô tả" HeaderStyle-Width="95%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Description" HeaderStyle-Width="95%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="EMAIL_DESC">
                                 <ItemTemplate>

@@ -49,9 +49,9 @@ namespace vpro.eshop.cpanel.page
         {
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Hỗ Trợ Trực Tuyến";
+                ucHeader.HeaderLevel1 = "Support online";
                 ucHeader.HeaderLevel1_Url = "../page/online_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật";
+                ucHeader.HeaderLevel2 = "Add new/Update";
                 ucHeader.HeaderLevel2_Url = "../page/online.aspx";
 
                 SearchResult();

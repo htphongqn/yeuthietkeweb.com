@@ -34,9 +34,9 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Website Liên Kết";
+                ucHeader.HeaderLevel1 = "Website Link";
                 ucHeader.HeaderLevel1_Url = "../page/websitelink_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật";
+                ucHeader.HeaderLevel2 = "Add new/Update";
                 ucHeader.HeaderLevel2_Url = "../page/websitelink.aspx";
 
                 getInfo();
