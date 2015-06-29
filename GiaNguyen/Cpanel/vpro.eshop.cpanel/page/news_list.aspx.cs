@@ -498,7 +498,7 @@ namespace vpro.eshop.cpanel.page
             //            items[j] = Utils.CIntDef(GridItemList.DataKeys[i]);
             //            try
             //            {
-            //                //Lấy nội dung mail
+            //                //Lấy Content mail
             //                var _v = DB.ESHOP_NEWs.Single(a => a.NEWS_ID == items[j]);
             //                if (_v != null)
             //                {

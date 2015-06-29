@@ -132,7 +132,7 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Sao chép nội dung
+                    Sao chép Content
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblNewsContent" runat="server" RepeatColumns="5">

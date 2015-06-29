@@ -186,7 +186,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Nội dung" HeaderStyle-Width="94%" ItemStyle-Wrap="true"
+                            <asp:TemplateColumn HeaderText="Content" HeaderStyle-Width="94%" ItemStyle-Wrap="true"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="COMMENT_CONTENT">
                                 <ItemTemplate>

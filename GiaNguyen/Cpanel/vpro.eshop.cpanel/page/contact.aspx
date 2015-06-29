@@ -59,7 +59,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Nội dung
+                    Content
                 </th>
                 <td>
                     <textarea name="txtDesc" id="txtDesc" runat="server" style=" width:500px;"  readonly="readonly"></textarea>

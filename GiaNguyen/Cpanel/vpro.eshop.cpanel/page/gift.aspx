@@ -131,7 +131,7 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Nội dung chi tiết
+                    Content chi tiết
                 </th>
                 <td height="25">
                     
