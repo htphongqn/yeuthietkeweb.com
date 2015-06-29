@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>EShop V1.0</title>
+    <title>Cpanel Pro-v1.0</title>
     <link href="../Styles/Cpanel_Login.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Cpanel_Site.css" rel="stylesheet" type="text/css" />
     <script src="/Scripts/UtilitiesCpanel.js" type="text/javascript"></script>
@@ -24,95 +24,69 @@
                     <div id="menu_images">
                         <img src="../Images/m_folder.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/category_list.aspx">Chuyên mục</a></div>
+                        <a href="../page/category_list.aspx">Categories</a></div>
                     <div id="menu_content">
-                        Chuyên mục là nơi khai báo thể hiện tất cả các menu trên website. Bao gồm menu trên,
-                        dưới, trái, phải....</div>
+                        Category is the place to declare all the menu shown on the website. Includes menu(top, left, right....)</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/Admin_news.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/news_list.aspx?type=0">Tin tức</a></div>
+                        <a href="../page/news_list.aspx?type=0">News</a></div>
                     <div id="menu_content">
-                        Thêm mới/ Cập nhật tất cả các bài viết trên website, các bài viết tin tức, giới thiệu</div>
+                        Add/ Update all articles on the website, the news article, the article writing service.</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/Admin_adv.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/aditem_list.aspx">Banner quảng cáo </a>
+                        <a href="../page/aditem_list.aspx">Banners</a>
                     </div>
                     <div id="menu_content">
-                        Đăng tải các banner quảng cáo từ phía khách hàng, các Logo của các công ty đối tác.</div>
+                        Upload the banner ad from the client side, the logo of the partner company.</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/m_contact.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/online_list.aspx">Danh sách HTTT</a></div>
+                        <a href="../page/online_list.aspx">Support Online</a></div>
                     <div id="menu_content">
-                        Danh sách hỗ trợ trực tuyến</div>
+                        Support online list</div>
                 </div>
-                <%--<div id="menu_child">
-                    <div id="menu_images">
-                        <img src="../Images/m_cart.png" width="70" height="70" /></div>
-                    <div id="menu_title">
-                        <a href="../page/order_list.aspx">Danh sách đơn hàng</a></div>
-                    <div id="menu_content">
-                        Danh sách các đơn đặt hàng trực tuyến mà khách hàng đã gửi về cho shop</div>
-                </div>--%>
             </div>
             <div id="menu_parent">
-                <%--<div id="menu_child">
-                    <div id="menu_images">
-                        <img src="../Images/Admin_System.png" width="70" height="70" /></div>
-                    <div id="menu_title">
-                    <a href="../page/page-video.aspx">
-                        Video trang chủ</a></div>
-                    <div id="menu_content">
-                        Video trang chủ</div>
-                </div>--%>
-                <%--<div id="menu_child">
-                    <div id="menu_images">
-                        <img src="../Images/Admin_online.png" width="70" height="70" /></div>
-                    <div id="menu_title">
-                        <a href="../page/order_list.aspx">Danh sách đơn hàng</a></div>
-                    <div id="menu_content">
-                        Danh sách các đơn đặt hàng trực tuyến mà khách hàng đã gửi về cho shop</div>
-                </div>--%>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/m_contact_info.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/contact_list.aspx">Thông tin liên hệ</a></div>
+                        <a href="../page/contact_list.aspx">Contact Information</a></div>
                     <div id="menu_content">
-                        Xem nhật ký thông tin liên hệ từ phía khách hàng gửi từ website.</div>
+                        View information from the customer contact sent from the website.</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/app_product.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/news_list.aspx?type=1">Sản phẩm</a></div>
+                        <a href="../page/news_list.aspx?type=1">Products</a></div>
                     <div id="menu_content">
-                        Thêm mới/ Cập nhật tất cả các bài viết trên website, các bài biết sảm phẩm, dịch vụ</div>
+                        Add/ update all products on the website, add new products.</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/Admin_User_Group.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/user_list.aspx">Người quản trị</a></div>
+                        <a href="../page/user_list.aspx">Manager</a></div>
                     <div id="menu_content">
-                        Thêm/ xóa/ sửa/ phân quyền cho các nhóm người quản trị và người quản trị.</div>
+                        Add / delete / edit / permissions for the administrator group and the administrator.</div>
                 </div>
                 <div id="menu_child">
                     <div id="menu_images">
                         <img src="../Images/Admin_General.png" width="70" height="70" /></div>
                     <div id="menu_title">
-                        <a href="../page/config_meta.aspx">Cấu hình chung </a>
+                        <a href="../page/config_meta.aspx">General Configuration </a>
                     </div>
                     <div id="menu_content">
-                        Cấu hình các Meta dành cho Seo, cấu hình Banner &amp; Logo, Cấu hình Footer</div>
+                        Meta configuration for seo &amp; logo, configure footer</div>
                 </div>
             </div>
         </div>

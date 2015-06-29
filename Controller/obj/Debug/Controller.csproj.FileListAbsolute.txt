@@ -131,3 +131,10 @@ H:\SoftWeb\TRAN_DINH_MY\tran_dinh_my_web\Controller\bin\Debug\Model.pdb
 H:\SoftWeb\TRAN_DINH_MY\tran_dinh_my_web\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 H:\SoftWeb\TRAN_DINH_MY\tran_dinh_my_web\Controller\obj\Debug\Controller.dll
 H:\SoftWeb\TRAN_DINH_MY\tran_dinh_my_web\Controller\obj\Debug\Controller.pdb
+H:\SoftWeb\yeuthietkeweb.com\Controller\bin\Debug\Controller.dll
+H:\SoftWeb\yeuthietkeweb.com\Controller\bin\Debug\Controller.pdb
+H:\SoftWeb\yeuthietkeweb.com\Controller\bin\Debug\Model.dll
+H:\SoftWeb\yeuthietkeweb.com\Controller\bin\Debug\Model.pdb
+H:\SoftWeb\yeuthietkeweb.com\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+H:\SoftWeb\yeuthietkeweb.com\Controller\obj\Debug\Controller.dll
+H:\SoftWeb\yeuthietkeweb.com\Controller\obj\Debug\Controller.pdb

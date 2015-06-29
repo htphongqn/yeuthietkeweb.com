@@ -2,7 +2,7 @@
 #nav_wrap {
 	position: relative;
 	height: 44px;
-	background: url(../Images/menuBg.gif) 0 0 repeat-x;
+	background: #1B62A9;
 	-moz-box-shadow: 1px 3px 5px #888888;
 	-webkit-box-shadow: 1px 3px 5px #888888;
 	box-shadow: 1px 3px 5px #888888;
@@ -25,7 +25,7 @@
 	position: relative;
 }
 #cssmenu > ul {
-	float: right;
+	float: left;
 	display: block;
 	z-index: 500;
 }

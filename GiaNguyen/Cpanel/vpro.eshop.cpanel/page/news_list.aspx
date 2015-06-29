@@ -2,7 +2,7 @@
     CodeBehind="news_list.aspx.cs" Inherits="vpro.eshop.cpanel.page.news_list" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>DS Tin tức | Vpro.Eshop</title>
+    <title>List New | Vpro.Eshop</title>
     <script language="javascript">
 				<!--
         function ToggleAll(e, action) {
@@ -48,27 +48,27 @@
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"> <img src="../Images/ICON_EDIT.jpg" width="30" height="30" style="border: 0px" /><div>
-                            Chỉnh sửa</div></asp:LinkButton>
+                            Edit</div></asp:LinkButton>
         </div>--%>
         <div class="icon_function_Child">
             <a href="#" id="ilinkNews" runat="server">
                 <img src="../Images/ICON_ADD.png" width="30" height="30" border="0" style="border: 0px" /><div>
-                    Thêm mới</div>
+                    Add New</div>
             </a>
         </div>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false" OnClick="lbtDelete_Click"> <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div></asp:LinkButton>
+                    Delete</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="news_list.aspx">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="boxinput">
-            <input name="txtKeyword" type="text" id="txtKeyword" runat="server" placeholder="Từ khóa tìm kiếm"/>
+            <input name="txtKeyword" type="text" id="txtKeyword" runat="server" placeholder="Enter a keyword"/>
             <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click"><div class="divKeyword" tabindex="0" aria-label="Tìm kiếm" style="display: block;"></div></asp:LinkButton>
         </div>
         <%--<div class="icon_function_Child">
@@ -89,7 +89,7 @@
             <tr>
                 <td>
                     <div style="padding-left: 100px; color: Red">
-                        <strong>Lọc Theo : </strong>
+                        <strong>Filter : </strong>
                         <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Drchuyenmuc_SelectedIndexChanged">
                         </asp:DropDownList>
                     </div>
@@ -132,7 +132,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Tiêu đề" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Title" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_TITLE">
                                 <ItemTemplate>
@@ -143,7 +143,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Bình luận" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Comment" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_TITLE">
                                 <ItemTemplate>
@@ -154,7 +154,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Loại tin" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Type" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_TYPE">
                                 <ItemTemplate>
@@ -163,7 +163,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Trạng thái" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Status" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_SHOWTYPE">
                                 <ItemTemplate>
@@ -173,7 +173,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Thứ tự" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Order" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False">
                                 <ItemTemplate>
                                     <%# DataBinder.Eval(Container.DataItem, "NEWS_ORDER") %>
@@ -182,7 +182,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Ngày tạo" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Date" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False">
                                 <ItemTemplate>
                                     <%# getDate(DataBinder.Eval(Container.DataItem, "NEWS_PUBLISHDATE"))%>
@@ -194,18 +194,18 @@
                             <asp:TemplateColumn HeaderText="#" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False">
                                 <ItemTemplate>
-                                    <a href='<%# getLink(DataBinder.Eval(Container.DataItem, "NEWS_ID")) %>'>Chỉnh sửa
+                                    <a href='<%# getLink(DataBinder.Eval(Container.DataItem, "NEWS_ID")) %>'>Edit
                                     </a>
                                 </ItemTemplate>
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Xóa">
+                            <asp:TemplateColumn HeaderText="Delete">
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                                 <ItemTemplate>
                                     <asp:LinkButton ID="lnkbtnDel" runat="server" CommandName="Delete">
-                                <img src="../images/delete_icon.gif" title="Xóa" border="0">
+                                <img src="../images/delete_icon.gif" title="Delete" border="0">
                                     </asp:LinkButton>
                                 </ItemTemplate>
                             </asp:TemplateColumn>

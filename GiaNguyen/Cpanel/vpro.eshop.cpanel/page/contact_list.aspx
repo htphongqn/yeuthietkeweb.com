@@ -2,7 +2,7 @@
     CodeBehind="contact_list.aspx.cs" Inherits="vpro.eshop.cpanel.page.contact_list" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Thông tin liên hệ | vpro.eshop</title>
+    <title>Contact Information | vpro.eshop</title>
     <script language="javascript">
                 <!--
         function ToggleAll(e, action, chkName) {
@@ -47,18 +47,18 @@
                     Trợ giúp</div></asp:LinkButton>
         </div>--%>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false" OnClick="lbtDelete_Click"> <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div></asp:LinkButton>
+                    Delete</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="#" onclick="javascript:document.location.reload(true);">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="boxinput">
-            <input name="txtKeyword" type="text" id="txtKeyword" runat="server" placeholder="Từ khóa tìm kiếm"/>
+            <input name="txtKeyword" type="text" id="txtKeyword" runat="server" placeholder="Enter a keyword"/>
             <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">
                 <div class="divKeyword" tabindex="0" aria-label="Tìm kiếm" style="display: block;"></div>
             </asp:LinkButton>
@@ -111,7 +111,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Tiêu đề" HeaderStyle-Width="1%" ItemStyle-Wrap="true" Visible="false"
+                            <asp:TemplateColumn HeaderText="Title" HeaderStyle-Width="1%" ItemStyle-Wrap="true" Visible="false"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="CONTACT_TITLE">
                                 <ItemTemplate>
@@ -153,7 +153,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="true" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Nội dung" HeaderStyle-Width="94%" ItemStyle-Wrap="true"
+                            <asp:TemplateColumn HeaderText="Content" HeaderStyle-Width="94%" ItemStyle-Wrap="true"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="CONTACT_CONTENT">
                                 <ItemTemplate>
@@ -163,12 +163,12 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="true" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Xóa">
+                            <asp:TemplateColumn HeaderText="Delete">
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                                 <ItemTemplate>
                                     <asp:LinkButton ID="lnkbtnDel" runat="server" CommandName="Delete">
-                                <img src="../images/delete_icon.gif" title="Xóa" border="0">
+                                <img src="../images/delete_icon.gif" title="Delete" border="0">
                                     </asp:LinkButton>
                                 </ItemTemplate>
                             </asp:TemplateColumn>

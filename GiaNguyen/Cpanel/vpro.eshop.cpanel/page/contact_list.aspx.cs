@@ -50,9 +50,9 @@ namespace vpro.eshop.cpanel.page
         {
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Thông tin liên hệ";
+                ucHeader.HeaderLevel1 = "Contact Information";
                 ucHeader.HeaderLevel1_Url = "../page/contact_list.aspx";
-                ucHeader.HeaderLevel2 = "Thông tin liên hệ";
+                ucHeader.HeaderLevel2 = "Contact Information";
                 ucHeader.HeaderLevel2_Url = "../page/contact_list.aspx";
 
                 SearchResult();
@@ -228,7 +228,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[8].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn xóa?');");
+                e.Item.Cells[8].Attributes.Add("onClick", "return confirm('Do you want delete?');");
             }
 
         }

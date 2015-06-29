@@ -13,12 +13,12 @@
         </div>--%>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="#" onclick="javascript:document.location.reload(true);">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
 

@@ -49,22 +49,22 @@
       <%--  <div class="icon_function_Child">
             <a href="aditem.aspx">
                 <img src="../Images/ICON_ADD.png" width="30" height="30" border="0" style="border: 0px" /><div>
-                    Thêm mới</div>
+                    Add New</div>
             </a>
         </div>--%>
         <%--<div class="icon_function_Child">
             <asp:LinkButton ID="lbtEdit" runat="server" OnClick="lbtEdit_Click"> <img src="../Images/ICON_EDIT.jpg" width="30" height="30" style="border: 0px" /><div>
-                            Chỉnh sửa</div></asp:LinkButton>
+                            Edit</div></asp:LinkButton>
         </div>--%>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false" OnClick="lbtDelete_Click"> <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div></asp:LinkButton>
+                    Delete</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="email_register_list.aspx">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
     </div>
@@ -93,7 +93,7 @@
                     <input name="txtKeyword" type="text" id="txtKeyword" runat="server" style="float: left;
                         width: 300px" />
                     <div id="click" style="float: left; margin-left: 5px;">
-                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Tìm kiếm </asp:LinkButton>
+                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Search</asp:LinkButton>
                     </div>
                 </td>
             </tr>
@@ -145,12 +145,12 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="96%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Xóa">
+                            <asp:TemplateColumn HeaderText="Delete">
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                                 <ItemTemplate>
                                     <asp:LinkButton ID="lnkbtnDel" runat="server" CommandName="Delete">
-                                <img src="../images/delete_icon.gif" title="Xóa" border="0">
+                                <img src="../images/delete_icon.gif" title="Delete" border="0">
                                     </asp:LinkButton>
                                 </ItemTemplate>
                             </asp:TemplateColumn>

@@ -29,7 +29,7 @@ namespace vpro.eshop.cpanel.page
                 Getinfo();
                 ucHeader.HeaderLevel1 = "Vote";
                 ucHeader.HeaderLevel1_Url = "../page/vote-list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật vote";
+                ucHeader.HeaderLevel2 = "Add new/Update vote";
                 ucHeader.HeaderLevel2_Url = "../page/vote.aspx";
             }
         }

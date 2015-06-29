@@ -8,13 +8,13 @@
     <div id="icon_function_parent">
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="default.aspx">
                 <img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
                 <div>
-                    Quay lại</div>
+                    Back</div>
             </a>
         </div>
     </div>

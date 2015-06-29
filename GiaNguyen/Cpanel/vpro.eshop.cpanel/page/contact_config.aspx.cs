@@ -311,7 +311,7 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Thông tin liên hệ";
+                ucHeader.HeaderLevel1 = "Contact Information";
                 ucHeader.HeaderLevel1_Url = "../page/contact_list.aspx";
                 ucHeader.HeaderLevel2 = "Cấu hình liên hệ";
                 ucHeader.HeaderLevel2_Url = "../page/contact_config.aspx";

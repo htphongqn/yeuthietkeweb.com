@@ -36,7 +36,7 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Sản phẩm - Tin tức";
+                ucHeader.HeaderLevel1 = "Product - New";
                 ucHeader.HeaderLevel1_Url = "../page/news_list.aspx";
                 ucHeader.HeaderLevel2 = "Dạng mở rộng file";
                 ucHeader.HeaderLevel2_Url = "../page/extensionfiles.aspx";

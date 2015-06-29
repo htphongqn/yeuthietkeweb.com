@@ -60,7 +60,7 @@ namespace vpro.eshop.cpanel.page
             {
                 ucHeader.HeaderLevel1 = "Người quản trị";
                 ucHeader.HeaderLevel1_Url = "../page/user_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật người quản trị";
+                ucHeader.HeaderLevel2 = "Add new/Update người quản trị";
                 ucHeader.HeaderLevel2_Url = "../page/user.aspx";
 
                 getInfo();
@@ -75,7 +75,7 @@ namespace vpro.eshop.cpanel.page
         protected void lbtSave_Click(object sender, EventArgs e)
         {
             if (CheckExits(txtUN.Value))
-                lblError.Text = "Đã tồn tại Tên đăng nhập, vui lòng nhập Tên đăng nhập khác.";
+                lblError.Text = "Đã tồn tại Tên Logon, vui lòng nhập Tên Logon khác.";
             else
                 SaveInfo();
         }
@@ -83,7 +83,7 @@ namespace vpro.eshop.cpanel.page
         protected void lbtSaveNew_Click(object sender, EventArgs e)
         {
             if (CheckExits(txtUN.Value))
-                lblError.Text = "Đã tồn tại Tên đăng nhập, vui lòng nhập Tên đăng nhập khác.";
+                lblError.Text = "Đã tồn tại Tên Logon, vui lòng nhập Tên Logon khác.";
             else
                 SaveInfo("user.aspx");
         }

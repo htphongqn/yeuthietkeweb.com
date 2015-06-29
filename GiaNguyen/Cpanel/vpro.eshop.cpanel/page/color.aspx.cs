@@ -38,7 +38,7 @@ namespace vpro.eshop.cpanel.page
             {
                 ucHeader.HeaderLevel1 = "Màu sắc";
                 ucHeader.HeaderLevel1_Url = "../page/color_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật màu sắc";
+                ucHeader.HeaderLevel2 = "Add new/Update màu sắc";
                 ucHeader.HeaderLevel2_Url = "../page/color.aspx";
 
                 getInfo();

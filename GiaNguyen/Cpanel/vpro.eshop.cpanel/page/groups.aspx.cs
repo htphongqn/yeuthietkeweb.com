@@ -58,7 +58,7 @@ namespace vpro.eshop.cpanel.page
             {
                 ucHeader.HeaderLevel1 = "Người quản trị";
                 ucHeader.HeaderLevel1_Url = "../page/user_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật nhóm quản trị";
+                ucHeader.HeaderLevel2 = "Add new/Update nhóm quản trị";
                 ucHeader.HeaderLevel2_Url = "../page/groups.aspx";
 
                 getInfo();

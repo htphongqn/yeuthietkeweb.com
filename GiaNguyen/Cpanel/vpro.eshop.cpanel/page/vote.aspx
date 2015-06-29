@@ -9,18 +9,18 @@
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSaveNew" runat="server" OnClick="lbtSaveNew_Click">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu và thêm mới</div>
+                    Save & Add Another</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="vote-list.aspx">
                 <img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
                 <div>
-                    Quay lại</div>
+                    Back</div>
             </a>
         </div>
     </div>
@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Cấp cha
+                    Root
                 </th>
                 <td>
                     <asp:DropDownList ID="ddlCategory" runat="server" Width="500px">

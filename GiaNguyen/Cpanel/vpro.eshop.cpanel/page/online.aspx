@@ -2,7 +2,7 @@
     CodeBehind="online.aspx.cs" Inherits="vpro.eshop.cpanel.page.online" ValidateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Hỗ trợ trực tuyến | Vpro.Eshop</title>
+    <title>Support online | Vpro.Eshop</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="icon_function_parent">
@@ -13,33 +13,33 @@
             </asp:LinkButton>
         </div>--%>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div>
+                    Delete</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSaveNew" runat="server" OnClick="lbtSaveNew_Click">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu và thêm mới</div>
+                    Save & Add Another</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="#" onclick="javascript:document.location.reload(true);">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="icon_function_Child">
             <a href="online_list.aspx">
                 <img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
                 <div>
-                    Quay lại</div>
+                    Back</div>
             </a>
         </div>
     </div>
@@ -52,12 +52,12 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Mô tả
+                    <span class="user">*</span>Description
                 </th>
                 <td>
                     <textarea id="txtDesc" runat="server" style="width: 500px;"></textarea>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng nhập Mô tả"
-                        Text="Vui lòng nhập Mô tả" ControlToValidate="txtDesc" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng nhập Description"
+                        Text="Vui lòng nhập Description" ControlToValidate="txtDesc" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr id="iUrl" runat="server">
@@ -103,7 +103,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Thứ tự
+                    Order
                 </th>
                 <td>
                     <input type="text" name="txtOrder" id="txtOrder" runat="server" onkeyup="this.value=formatNumeric(this.value);"
@@ -113,7 +113,7 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Ngôn ngữ
+                    Language
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblLanguage" runat="server" RepeatColumns="5">
@@ -131,7 +131,7 @@
             <tr id="trImage1" runat="server">
                 <th valign="top" class="left">
                     <asp:ImageButton ID="btnDelete1" runat="server" ImageUrl="../images/delete_icon.gif"
-                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Xóa hình minh họa này">
+                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Do you want delete this image?">
                     </asp:ImageButton>
                 </th>
                 <td>

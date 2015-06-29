@@ -2,7 +2,7 @@
     CodeBehind="user_gift.aspx.cs" Inherits="vpro.eshop.cpanel.page.user_gift" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Thông tin liên hệ | vpro.eshop</title>
+    <title>Contact Information | vpro.eshop</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="icon_function_parent">
@@ -14,26 +14,26 @@
         </div>
          <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" onclick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div>
+                    Delete</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="#" onclick="javascript:document.location.reload(true);">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="icon_function_Child">
             <a href="user_gift_list.aspx">
                 <img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
                 <div>
-                    Quay lại</div>
+                    Back</div>
             </a>
         </div>
     </div>
@@ -163,7 +163,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="25%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Mô tả" HeaderStyle-Width="25%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Description" HeaderStyle-Width="25%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="GIFT_DESC">
                                 <ItemTemplate>

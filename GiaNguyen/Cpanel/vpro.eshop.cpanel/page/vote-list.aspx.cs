@@ -250,7 +250,7 @@ namespace vpro.eshop.cpanel.page
 
         public string getLanguage(object Cat_Pos)
         {
-            return Utils.CIntDef(Cat_Pos) == 1 ? "Việt Nam" : "All";
+            return Utils.CIntDef(Cat_Pos) == 1 ? "Viet Nam" : "All";
         }
 
         #endregion
@@ -354,7 +354,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[5].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn xóa?');");
+                e.Item.Cells[5].Attributes.Add("onClick", "return confirm('Do you want delete?');");
             }
 
         }

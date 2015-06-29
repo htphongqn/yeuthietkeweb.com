@@ -38,9 +38,9 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Chuyên mục";
+                ucHeader.HeaderLevel1 = "Category";
                 ucHeader.HeaderLevel1_Url = "../page/category_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật Chuyên mục";
+                ucHeader.HeaderLevel2 = "Add new/Update Category";
                 ucHeader.HeaderLevel2_Url = "../page/category.aspx";
 
                 getInfo();
@@ -59,7 +59,7 @@ namespace vpro.eshop.cpanel.page
                 txtSeoUrl.Value = txtSeoUrl.Value; // +"-" + txtCode.Value;
             }
             if (CheckExitsLink(txtSeoUrl.Value))
-                lblError.Text = "Đã tồn tại Seo Url, vui lòng nhập Seo Url khác cho chuyên mục.";
+                lblError.Text = "Đã tồn tại Seo Url, Please enter the Seo Title khác cho Category.";
             else
                 SaveInfo();
         }
@@ -71,7 +71,7 @@ namespace vpro.eshop.cpanel.page
                 txtSeoUrl.Value = txtSeoUrl.Value; // +"-" + txtCode.Value;
             }
             if (CheckExitsLink(txtSeoUrl.Value))
-                lblError.Text = "Đã tồn tại Seo Url, vui lòng nhập Seo Url khác cho chuyên mục.";
+                lblError.Text = "Đã tồn tại Seo Url, Please enter the Seo Title khác cho Category.";
             else
                 SaveInfo("category.aspx");
         }

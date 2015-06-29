@@ -4,7 +4,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Assembly="Karpach.WebControls" Namespace="Karpach.WebControls" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Cấu hình Meta trang chủ | Vpro.EsHOP</title>
+    <title>Config Meta | Vpro.EsHOP</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -25,12 +25,12 @@
         </div>--%>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="config_meta.aspx">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
     </div>
@@ -47,18 +47,18 @@
                 </th>
                 <td>
                     <input type="text" name="txtSeoTitle" id="txtSeoTitle" runat="server" style="width: 500px;" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Vui lòng nhập Seo Title"
-                        Text="Vui lòng nhập Seo Title" ControlToValidate="txtSeoTitle" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the Seo Title"
+                        Text="Please enter the Seo Title" ControlToValidate="txtSeoTitle" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Title(Tiếng anh)
+                    <span class="user">*</span>Title(English)
                 </th>
                 <td>
                     <input type="text" name="txtSeoTitleEn" id="txtSeoTitleEn" runat="server" style="width: 500px;" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Vui lòng nhập Seo Title tiếng anh"
-                        Text="Vui lòng nhập Seo Title tiếng anh" ControlToValidate="txtSeoTitleEn" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please enter the Seo Title"
+                        Text="Please enter the Seo Title" ControlToValidate="txtSeoTitleEn" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -67,18 +67,18 @@
                 </th>
                 <td>
                     <textarea id="txtSeoDesc" runat="server" style="width: 500px;"></textarea>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng nhập Meta Description"
-                        Text="Vui lòng nhập Meta Description" ControlToValidate="txtSeoDesc" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter the Meta Description"
+                        Text="Please enter the Meta Description" ControlToValidate="txtSeoDesc" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Meta Description(Tiếng anh)
+                    <span class="user">*</span>Meta Description(English)
                 </th>
                 <td>
                     <textarea id="txtSeoDescEn" runat="server" style="width: 500px;"></textarea>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Vui lòng nhập Meta Description tiếng anh"
-                        Text="Vui lòng nhập Meta Description tiếng anh" ControlToValidate="txtSeoDescEn"
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please enter the Meta Description"
+                        Text="Please enter the Meta Description" ControlToValidate="txtSeoDescEn"
                         CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
@@ -88,18 +88,18 @@
                 </th>
                 <td>
                     <textarea id="txtSeoKeyword" runat="server" style="width: 500px;"></textarea>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Vui lòng nhập Meta Keyword"
-                        Text="Vui lòng nhập Meta Keyword" ControlToValidate="txtSeoKeyword" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter the Meta Keyword"
+                        Text="Please enter the Meta Keyword" ControlToValidate="txtSeoKeyword" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Meta Keyword(Tiếng anh)
+                    <span class="user">*</span>Meta Keyword(English)
                 </th>
                 <td>
                     <textarea id="txtSeoKeywordEn" runat="server" style="width: 500px;"></textarea>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Vui lòng nhập Meta Keyword tiếng anh"
-                        Text="Vui lòng nhập Meta Keyword tiếng anh" ControlToValidate="txtSeoKeywordEn"
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Please enter the Meta Keyword"
+                        Text="Please enter the Meta Keyword" ControlToValidate="txtSeoKeywordEn"
                         CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
@@ -114,7 +114,7 @@
             <tr id="trFile" runat="server">
                 <th valign="top" class="left">
                     <asp:ImageButton ID="btnDelete1" runat="server" ImageUrl="../images/delete_icon.gif"
-                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Xóa file đính kèm">
+                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Do you want delete this file?">
                     </asp:ImageButton>
                 </th>
                 <td>
@@ -133,7 +133,7 @@
             <tr id="trFileBG" runat="server">
                 <th valign="top" class="left">
                     <asp:ImageButton ID="btnDeleteBG" runat="server" ImageUrl="../images/delete_icon.gif"
-                        BorderWidth="0" Width="13px" ToolTip="Xóa file đính kèm" OnClick="btnDeleteBG_Click">
+                        BorderWidth="0" Width="13px" ToolTip="Do you want delete this file?" OnClick="btnDeleteBG_Click">
                     </asp:ImageButton>
                 </th>
                 <td>
@@ -143,7 +143,7 @@
             </tr>
             <tr id="tr1" runat="server">
                 <th valign="top" class="left" nowrap>
-                    Chọn màu hover
+                    Color hover
                 </th>
                 <td class="inputcolor">
                     <cc1:ColorPicker ID="ColorPicker1" runat="server"/>

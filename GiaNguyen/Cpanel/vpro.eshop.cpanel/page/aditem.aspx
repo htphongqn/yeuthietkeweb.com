@@ -63,31 +63,31 @@
             </asp:LinkButton>
         </div>--%>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div>
+                    Delete</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSaveNew" runat="server" OnClick="lbtSaveNew_Click"><img src="../Images/ICON_ADD_NEW.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu & Thêm mới</div></asp:LinkButton>
+                    Lưu & Add New</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="#" onclick="javascript:document.location.reload(true);">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="icon_function_Child">
             <a href="aditem_list.aspx">
                 <img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
                 <div>
-                    Quay lại</div>
+                    Back</div>
             </a>
         </div>
     </div>
@@ -116,7 +116,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Mô tả
+                    Description
                 </th>
                 <td>
                     <textarea id="txtDesc" runat="server" style="width: 500px;"></textarea>
@@ -124,7 +124,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Liên kết
+                    Link
                 </th>
                 <td>
                     <input type="text" name="txtUrl" id="txtUrl" runat="server" style="width: 425px;" />
@@ -177,7 +177,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Thứ tự
+                    Order
                 </th>
                 <td>
                     <input type="text" name="txtOrder" id="txtOrder" runat="server" onblur="this.value=formatNumeric(this.value);"
@@ -202,7 +202,7 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Ngôn ngữ
+                    Language
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblLanguage" runat="server" RepeatColumns="5">
@@ -228,7 +228,7 @@
             <tr id="trFile" runat="server">
                 <th valign="top" class="left">
                     <asp:ImageButton ID="btnDelete1" runat="server" ImageUrl="../images/delete_icon.gif"
-                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Xóa file đính kèm">
+                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Do you want delete this file?">
                     </asp:ImageButton>
                 </th>
                 <td>
@@ -243,7 +243,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Chọn chuyên mục cho Banner
+                    Chọn Category cho Banner
                 </td>
             </tr>
             <tr>
@@ -282,7 +282,7 @@
                                     <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                     <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                                 </asp:TemplateColumn>
-                                <asp:TemplateColumn HeaderText="Phân quyền chuyên mục" HeaderStyle-Width="97%" ItemStyle-Wrap="False"
+                                <asp:TemplateColumn HeaderText="Phân quyền Category" HeaderStyle-Width="97%" ItemStyle-Wrap="False"
                                     HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False">
                                     <ItemTemplate>
                                         <%# DataBinder.Eval(Container.DataItem, "CAT_NAME")%>

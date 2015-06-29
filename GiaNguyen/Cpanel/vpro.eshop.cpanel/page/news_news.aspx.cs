@@ -54,7 +54,7 @@ namespace vpro.eshop.cpanel.page
             CheckTypeNews();
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Sản phẩm tin tức";
+                ucHeader.HeaderLevel1 = "Product New";
                 ucHeader.HeaderLevel1_Url = "../page/news_list.aspx";
                 if (m_news_type == 2)
                 {

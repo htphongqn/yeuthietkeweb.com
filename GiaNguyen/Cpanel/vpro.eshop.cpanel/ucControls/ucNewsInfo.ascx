@@ -4,7 +4,7 @@
     <tr>
         <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
             colspan="2">
-            Thông tin sản phẩm - tin tức
+            General Information
         </td>
     </tr>
     <tr>
@@ -13,7 +13,7 @@
     </tr>
     <tr>
         <th class="left" valign="top" width="1%" nowrap style="text-align:left">
-            Tiêu đề
+            Title
         </th>
         <td width="90%">
             <asp:Label runat="server" ID="lblname"></asp:Label>
@@ -21,7 +21,7 @@
     </tr>
     <tr>
         <th class="left" valign="top" width="1%" nowrap style="text-align:left">
-            Ngày đăng tin
+            Date
         </th>
         <td width="90%">
             <asp:Label runat="server" ID="lblPublishDate"></asp:Label>

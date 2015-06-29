@@ -64,7 +64,7 @@ namespace vpro.eshop.cpanel.page
 
                 if (login.ToList().Count <= 0)
                 {
-                    lblError.Text = "Tài khoản đăng nhập không tồn tại.";
+                    lblError.Text = "Account does not exist!";
                 }
                 else
                 {
@@ -73,9 +73,9 @@ namespace vpro.eshop.cpanel.page
                     //kiem tra lai salt bi null
 
                     if (login.ToList()[0].USER_PW != strPW)
-                    { lblError.Text = "Thông tin đăng nhập không hợp lệ."; }
+                    { lblError.Text = "Invalid password."; }
                     else if (login.ToList()[0].USER_ACTIVE == 0)
-                    { lblError.Text = "Tài khoản chưa được kích hoạt."; }
+                    { lblError.Text = "Account has not been activated."; }
                     else
                     {
                         Session["USER_ID"] = login.ToList()[0].USER_ID;

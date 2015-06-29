@@ -40,9 +40,9 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Tin tức - Sản phẩm";
+                ucHeader.HeaderLevel1 = "New - Product";
                 ucHeader.HeaderLevel1_Url = "../page/news_list.aspx";
-                ucHeader.HeaderLevel2 = "Sao chép Tin tức - Sản phẩm";
+                ucHeader.HeaderLevel2 = "Sao chép New - Product";
                 ucHeader.HeaderLevel2_Url = "../page/news_copy.aspx";
 
                 getInfo();
@@ -64,7 +64,7 @@ namespace vpro.eshop.cpanel.page
         protected void lbtSave_Click(object sender, EventArgs e)
         {
             if (CheckExitsLink(txtSeoUrl.Value))
-                lblError.Text = "Đã tồn tại Seo Url, vui lòng nhập Seo Url khác cho tin.";
+                lblError.Text = "Đã tồn tại Seo Url, Please enter the Seo Title khác cho tin.";
             else
                 SaveInfo();
         }
@@ -301,7 +301,7 @@ namespace vpro.eshop.cpanel.page
         }
         public string get_NameTitle(int _type)
         {
-            string str = _type == 1 ? "Sản phẩm" : "Tin tức";
+            string str = _type == 1 ? "Product" : "New";
             return str;
         }
         private bool CheckExitsLink(string strLink)

@@ -28,8 +28,8 @@ namespace YeuThietKeWeb.UIs
             var _logoSlogan = per.Load_logo_and_sologan(2);
             if (_logoSlogan.ToList().Count > 0)
             {
-                Rplogo.DataSource = _logoSlogan.Where(n => n.BANNER_FIELD1 == "1");
-                Rplogo.DataBind();
+                //Rplogo.DataSource = _logoSlogan.Where(n => n.BANNER_FIELD1 == "1");
+                //Rplogo.DataBind();
 
                 Rpbanner.DataSource = _logoSlogan.Where(n => n.BANNER_FIELD1 == "2");
                 Rpbanner.DataBind();

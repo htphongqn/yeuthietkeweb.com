@@ -49,7 +49,7 @@ namespace vpro.eshop.cpanel.page
             {
                 ucHeader.HeaderLevel1 = "Màu sắc";
                 ucHeader.HeaderLevel1_Url = "../page/color_list.aspx";
-                ucHeader.HeaderLevel2 = "Thêm mới/cập nhật màu sắc";
+                ucHeader.HeaderLevel2 = "Add new/Update màu sắc";
                 ucHeader.HeaderLevel2_Url = "../page/color.aspx";
 
                 SearchResult();
@@ -180,7 +180,7 @@ namespace vpro.eshop.cpanel.page
         {
             if (Utils.CIntDef(obj_id) == 1)
             {
-                return "Hiển thị";
+                return "Activate";
             }
             else
             {
@@ -233,7 +233,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[4].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn xóa?');");
+                e.Item.Cells[4].Attributes.Add("onClick", "return confirm('Do you want delete?');");
             }
 
         }

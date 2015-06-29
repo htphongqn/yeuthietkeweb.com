@@ -13,33 +13,33 @@
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child" id="dvDelete" runat="server">
-            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Bạn có chắc chắn xóa không?');"
+            <asp:LinkButton ID="lbtDelete" runat="server" OnClick="lbtDelete_Click" OnClientClick="return confirm('Do you want delete?');"
                 CausesValidation="false">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Xóa</div>
+                    Delete</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSaveNew" runat="server" OnClick="lbtSaveNew_Click">
                 <img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu và thêm mới</div>
+                    Save & Add Another</div>
             </asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu</div></asp:LinkButton>
+                    Save</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <a href="#" onclick="javascript:document.location.reload(true);">
                 <img src="../Images/ICON_UPDATE.jpg" width="30" height="30" style="border: 0px" /><div>
-                    Cập nhật</div>
+                    Refesh</div>
             </a>
         </div>
         <div class="icon_function_Child">
             <a href="extensionfiles_list.aspx">
                 <img src="../Images/ICON_RETURN.png" width="30" height="30" style="border: 0px" />
                 <div>
-                    Quay lại</div>
+                    Back</div>
             </a>
         </div>
     </div>
@@ -62,7 +62,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Mô tả
+                    Description
                 </th>
                 <td>
                     <input type="text" name="txtDesc" id="txtDesc" runat="server" style="width: 500px;" />
@@ -79,7 +79,7 @@
             <tr id="trImage1" runat="server">
                 <th valign="top" class="left">
                     <asp:ImageButton ID="btnDelete1" runat="server" ImageUrl="../images/delete_icon.gif"
-                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Xóa hình minh họa này">
+                        BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Do you want delete this image?">
                     </asp:ImageButton>
                 </th>
                 <td>
