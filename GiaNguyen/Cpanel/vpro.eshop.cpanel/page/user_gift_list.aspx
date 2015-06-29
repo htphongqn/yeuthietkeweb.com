@@ -105,7 +105,7 @@
             <tr>
                 <td style="text-align: center;" colspan="2">
                     <div id="click" style="width: 500px; float: left; padding-left: 250px;">
-                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Tìm kiếm </asp:LinkButton>
+                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Search</asp:LinkButton>
                     </div>
                 </td>
             </tr>

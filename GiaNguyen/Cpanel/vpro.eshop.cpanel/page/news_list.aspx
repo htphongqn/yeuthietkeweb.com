@@ -89,7 +89,7 @@
             <tr>
                 <td>
                     <div style="padding-left: 100px; color: Red">
-                        <strong>Lọc Theo : </strong>
+                        <strong>Filter : </strong>
                         <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Drchuyenmuc_SelectedIndexChanged">
                         </asp:DropDownList>
                     </div>
@@ -143,7 +143,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Bình luận" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Comment" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_TITLE">
                                 <ItemTemplate>
@@ -154,7 +154,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Loại tin" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Type" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_TYPE">
                                 <ItemTemplate>
@@ -163,7 +163,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Trạng thái" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Status" HeaderStyle-Width="91%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_SHOWTYPE">
                                 <ItemTemplate>
@@ -182,7 +182,7 @@
                                 </HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Left"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Ngày tạo" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Date" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False">
                                 <ItemTemplate>
                                     <%# getDate(DataBinder.Eval(Container.DataItem, "NEWS_PUBLISHDATE"))%>

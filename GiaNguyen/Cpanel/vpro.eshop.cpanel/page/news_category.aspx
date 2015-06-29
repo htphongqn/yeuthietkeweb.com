@@ -3,7 +3,7 @@
 
 <%@ Register Src="../ucControls/ucNewsInfo.ascx" TagName="ucNewsInfo" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Nhóm người dùng | Vpro.Eshop </title>
+    <title>Categories | Vpro.Eshop </title>
     <script language="javascript">
 				<!--
         function ToggleAll(e, action) {
@@ -129,7 +129,7 @@
             </tr>
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general">
-                    Chọn Category cho tin
+                    Select category
                 </td>
             </tr>
             <tr>

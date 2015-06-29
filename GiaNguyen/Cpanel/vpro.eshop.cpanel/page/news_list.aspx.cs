@@ -148,7 +148,7 @@ namespace vpro.eshop.cpanel.page
                     ddlCategory.DataBind();
 
                 }
-                ListItem l = new ListItem("------ Tất cả Category ------", "0", true);
+                ListItem l = new ListItem("------Categories ------", "0", true);
                 l.Selected = true;
                 ddlCategory.Items.Insert(0, l);
 
@@ -198,7 +198,7 @@ namespace vpro.eshop.cpanel.page
                 var _vComment = DB.GetTable<ESHOP_NEWS_COMMENT>().Where(a=>a.NEWS_ID == _iNewsID && a.COMMENT_CHECK == 0);
                 if (_vComment.ToList().Count > 0)
                 {
-                    return Utils.CStrDef(NewsTitle) + " - <font color='#FF0000'>Có phản hồi mới</font>";
+                    return Utils.CStrDef(NewsTitle) + " - <font color='#FF0000'>You have a new feedback</font>";
                 }
                 else
                 {
@@ -244,7 +244,7 @@ namespace vpro.eshop.cpanel.page
 
         public string getStatus(object obj_status)
         {
-            return Utils.CIntDef(obj_status) == 0 ? "Ẩn" : "Activate";
+            return Utils.CIntDef(obj_status) == 0 ? "Hide" : "Activate";
         }
 
         public string getLanguage(object News_Language)
@@ -404,7 +404,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[9].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn Delete?');");
+                e.Item.Cells[9].Attributes.Add("onClick", "return confirm('Do you want delete?');");
             }
 
         }
@@ -464,11 +464,11 @@ namespace vpro.eshop.cpanel.page
 
 
                 strEmailBody = "<html><body>";
-                strEmailBody += "Click vào những đường link bên dưới để xem nội dung chi tiết.<br />";
+                strEmailBody += "Click the link below to view detailed contents.<br />";
                 strEmailBody += MailContent;
                 strEmailBody += "</body></html>";
 
-                SendEmailSMTP("Vui lòng ghé thăm website myphamhanqoucso1.com", Email, "", "", strEmailBody, true, false);
+                SendEmailSMTP("Please visit the website yeuthietkeweb.com", Email, "", "", strEmailBody, true, false);
 
             }
             catch (Exception ex)

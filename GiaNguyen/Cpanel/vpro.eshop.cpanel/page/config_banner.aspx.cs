@@ -418,7 +418,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[4].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn Delete?');");
+                e.Item.Cells[4].Attributes.Add("onClick", "return confirm('Do you want delete?');");
             }
 
         }

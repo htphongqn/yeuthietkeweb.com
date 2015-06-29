@@ -93,7 +93,7 @@
                     <input name="txtKeyword" type="text" id="txtKeyword" runat="server" style="float: left;
                         width: 300px" />
                     <div id="click" style="float: left; margin-left: 5px;">
-                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Tìm kiếm </asp:LinkButton>
+                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Search</asp:LinkButton>
                     </div>
                 </td>
             </tr>

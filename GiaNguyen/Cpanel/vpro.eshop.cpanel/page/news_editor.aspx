@@ -3,7 +3,7 @@
 
 <%@ Register Src="../ucControls/ucNewsInfo.ascx" TagName="ucNewsInfo" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Soạn tin - Product | Vpro.Eshop</title>
+    <title>Compose | Vpro.Eshop</title>
     <script src="../tiny_mce/tiny_mce.js" type="text/javascript"></script>
     <script type="text/javascript">
         tinyMCE.init({
@@ -203,7 +203,7 @@
             </tr>
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general">
-                    Nội dung chi tiết tin
+                    Edit HTML
                 </td>
             </tr>
             <tr>

@@ -3,7 +3,7 @@
 
 <%@ Register Src="../ucControls/ucNewsInfo.ascx" TagName="ucNewsInfo" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>File đính kèm | Vpro.Eshop</title>
+    <title>Attach File | Vpro.Eshop</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="icon_function_parent">
@@ -84,7 +84,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Thông tin file đính kèm
+                    Detail Information
                 </td>
             </tr>
             <tr>
@@ -98,7 +98,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Loại file
+                    Type
                 </th>
                 <td>
                     <span>
@@ -149,7 +149,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Danh sách file đính kèm
+                    List File
                 </td>
             </tr>
             <tr>
@@ -163,7 +163,7 @@
                 <td width="300px;">
                     <input name="txtKeyword" type="text" id="txtKeyword" runat="server" style=" float:left;width: 300px" />
                     <div id="click" style=" float:left; margin-left:5px;">
-                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Tìm kiếm </asp:LinkButton>
+                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Search</asp:LinkButton>
                     </div>
                 </td>
             </tr>
@@ -190,7 +190,7 @@
                                 </ItemTemplate>
                                 <ItemStyle HorizontalAlign="Center" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Tên" HeaderStyle-Width="97%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Name" HeaderStyle-Width="97%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="NEWS_ATT_NAME">
                                 <ItemTemplate>

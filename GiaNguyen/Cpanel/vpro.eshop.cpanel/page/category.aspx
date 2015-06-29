@@ -197,7 +197,7 @@
                     <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="5">
                         <asp:ListItem Text="New" Value="0" Selected="True"></asp:ListItem>
                         <%--<asp:ListItem Text="Product" Value="1"></asp:ListItem>--%>
-                        <asp:ListItem Text="Khác" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="Other" Value="2"></asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
             </tr>

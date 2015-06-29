@@ -120,7 +120,7 @@
             </tr>
             <tr id="trUpload1" runat="server">
                 <th valign="top" class="left" nowrap>
-                    Hình
+                    Image
                 </th>
                 <td>
                      <asp:FileUpload ID="FileUpload1" runat="server" class="multi" multiple="true" />
@@ -128,7 +128,7 @@
             </tr>
             <tr id="trImage1" runat="server">
                 <th valign="top" class="left">
-                    Hình<br />
+                    Image<br />
                     <asp:ImageButton ID="btnDelete1" runat="server" ImageUrl="../images/delete_icon.gif"
                         BorderWidth="0" Width="13px" OnClick="btnDelete1_Click" ToolTip="Do you want delete this file?">
                     </asp:ImageButton>
@@ -166,7 +166,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Danh sách hình ảnh
+                    List
                 </td>
             </tr>
             <tr>
@@ -181,7 +181,7 @@
                     <input name="txtKeyword" type="text" id="txtKeyword" runat="server" style="float: left;
                         width: 300px" />
                     <div id="click" style="float: left; margin-left: 5px;">
-                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Tìm kiếm </asp:LinkButton>
+                        <asp:LinkButton ID="lbtSearch" runat="server" OnClick="lbtSearch_Click">Search</asp:LinkButton>
                     </div>
                 </td>
             </tr>
