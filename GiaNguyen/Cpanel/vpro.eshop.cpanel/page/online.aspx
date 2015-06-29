@@ -86,7 +86,7 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Loại
+                    Type
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblType" runat="server" RepeatColumns="5">

@@ -21,7 +21,7 @@
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSaveNew" runat="server" OnClick="lbtSaveNew_Click"><img src="../Images/ICON_DELETE.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu & Add New</div></asp:LinkButton>
+                    Save & Add New</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
@@ -68,7 +68,7 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Loại
+                    Type
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblBannerType" runat="server" RepeatColumns="5">
@@ -125,7 +125,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Danh sách Banner
+                    List Banners
                 </td>
             </tr>
             <tr>

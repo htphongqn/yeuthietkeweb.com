@@ -3,7 +3,7 @@
     ValidateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Cấu hình Footer - Product | Vpro.Eshop</title>
+    <title>Configuration Footer | Vpro.Eshop</title>
     <script src="../tiny_mce/tiny_mce.js" type="text/javascript"></script>
     <script type="text/javascript">
         tinyMCE.init({
@@ -154,7 +154,7 @@
             </tr>
         </table>
     </div>
-    <div id="field">
+    <div id="field" style="display:none;">
         Tiếng anh
         <table width="auto" border="0">
             <tr>

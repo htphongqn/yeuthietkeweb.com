@@ -2,7 +2,7 @@
     CodeBehind="aditem_list.aspx.cs" Inherits="vpro.eshop.cpanel.page.aditem_list" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Danh sách banner quảng cáo| Vpro.Eshop</title>
+    <title>Banners| Vpro.Eshop</title>
     <script language="javascript">
                 <!--
         function ToggleAll(e, action) {
@@ -110,7 +110,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Mã" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Code" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="AD_ITEM_CODE">
                                 <ItemTemplate>
@@ -133,7 +133,7 @@
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
 
-                            <asp:TemplateColumn HeaderText="Ảnh minh họa" HeaderStyle-Width="15%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Image" HeaderStyle-Width="15%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="">
                                 <ItemTemplate>                                    
@@ -142,7 +142,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="15%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Vị trí" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Position" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="">
                                 <ItemTemplate>                                   

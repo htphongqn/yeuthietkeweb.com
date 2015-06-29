@@ -2,7 +2,7 @@
     CodeBehind="group_list.aspx.cs" Inherits="vpro.eshop.cpanel.page.group_list" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>DS nhóm người dùng | Vpro.Eshop </title>
+    <title>List Groups | Vpro.Eshop </title>
     <script language="javascript">
 				<!--
         function ToggleAll(e, action) {
@@ -106,7 +106,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Mã nhóm" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Code" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="GROUP_CODE">
                                 <ItemTemplate>
@@ -117,7 +117,7 @@
                                 <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                 <ItemStyle Wrap="False" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Tên nhóm" HeaderStyle-Width="95%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText="Name" HeaderStyle-Width="95%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="GROUP_NAME">
                                 <ItemTemplate>

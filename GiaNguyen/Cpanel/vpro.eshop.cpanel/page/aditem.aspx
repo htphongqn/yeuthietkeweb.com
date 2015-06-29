@@ -4,7 +4,7 @@
 <%@ Register Src="../Calendar/pickerAndCalendar.ascx" TagName="pickerAndCalendar"
     TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Cấu hình Banner| Vpro.Eshop</title>
+    <title>Banner| Vpro.Eshop</title>
     <link href="../Calendar/calendarStyle.css" rel="stylesheet" type="text/css" />
     <script language="javascript">
 				<!--
@@ -71,7 +71,7 @@
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSaveNew" runat="server" OnClick="lbtSaveNew_Click"><img src="../Images/ICON_ADD_NEW.png" width="30" height="30" style="border: 0px" /><div>
-                    Lưu & Add New</div></asp:LinkButton>
+                    Save & Add New</div></asp:LinkButton>
         </div>
         <div class="icon_function_Child">
             <asp:LinkButton ID="lbtSave" runat="server" OnClick="lbtSave_Click"><img src="../Images/ICON_SAVE.png" width="30" height="30" style="border: 0px" /><div>
@@ -97,7 +97,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Thông tin chung
+                    General Information
                 </td>
             </tr>
             <tr>
@@ -106,12 +106,12 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Mã
+                    <span class="user">*</span>Code
                 </th>
                 <td>
                     <input type="text" name="txtCode" id="txtCode" runat="server" style="width: 500px;" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Vui lòng nhập mã"
-                        Text="Vui lòng nhập mã" ControlToValidate="txtCode" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the code"
+                        Text="Please enter the code" ControlToValidate="txtCode" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -136,18 +136,18 @@
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Loại
+                    Type
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblBannerType" runat="server" RepeatColumns="5">
-                        <asp:ListItem Selected="True" Text="Hình" Value="0"></asp:ListItem>
+                        <asp:ListItem Selected="True" Text="Image" Value="0"></asp:ListItem>
                         <asp:ListItem Text="Flash" Value="1"></asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
             </tr>
             <tr style="height: 20px;">
                 <th valign="top" class="left">
-                    Vị trí
+                    Position
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblAdPos" runat="server" RepeatColumns="5">
@@ -243,7 +243,7 @@
             <tr>
                 <td height="18" align="left" style="border-bottom: #e3e3e3 1px  solid;" class="general"
                     colspan="2">
-                    Chọn Category cho Banner
+                    Select category
                 </td>
             </tr>
             <tr>
@@ -282,7 +282,7 @@
                                     <HeaderStyle Wrap="False" CssClass="tdGridHeader" Width="1%"></HeaderStyle>
                                     <ItemStyle Wrap="False" CssClass="tdGridRow" HorizontalAlign="Center"></ItemStyle>
                                 </asp:TemplateColumn>
-                                <asp:TemplateColumn HeaderText="Phân quyền Category" HeaderStyle-Width="97%" ItemStyle-Wrap="False"
+                                <asp:TemplateColumn HeaderText="Categories" HeaderStyle-Width="97%" ItemStyle-Wrap="False"
                                     HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False">
                                     <ItemTemplate>
                                         <%# DataBinder.Eval(Container.DataItem, "CAT_NAME")%>

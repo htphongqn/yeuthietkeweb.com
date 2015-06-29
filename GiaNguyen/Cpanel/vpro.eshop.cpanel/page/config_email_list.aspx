@@ -2,7 +2,7 @@
     CodeBehind="config_email_list.aspx.cs" Inherits="vpro.eshop.cpanel.page.config_email_list" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <title>Danh sách Email | vpro.eshop</title>
+    <title>List Emails | vpro.eshop</title>
     <script language="javascript">
 				<!--
         function ToggleAll(e, action) {
@@ -82,7 +82,7 @@
                                 <ItemStyle HorizontalAlign="Center" CssClass="tdGridRow"></ItemStyle>
                             </asp:TemplateColumn>
                            
-                            <asp:TemplateColumn HeaderText="STT" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
+                            <asp:TemplateColumn HeaderText=".No" HeaderStyle-Width="1%" ItemStyle-Wrap="False"
                                 HeaderStyle-CssClass="tdGridHeader" ItemStyle-CssClass="tdGridRow" HeaderStyle-Wrap="False"
                                 SortExpression="EMAIL_STT">
                                 <ItemTemplate>

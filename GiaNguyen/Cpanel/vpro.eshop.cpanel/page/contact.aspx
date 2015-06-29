@@ -41,7 +41,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Tên
+                    Full name
                 </th>
                 <td>
                     <input type="text" name="txtName" id="txtName" runat="server" style=" width:500px;" readonly="readonly" />
