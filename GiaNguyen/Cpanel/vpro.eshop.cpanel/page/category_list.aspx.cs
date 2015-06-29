@@ -177,9 +177,11 @@ namespace vpro.eshop.cpanel.page
                 case 0:
                     str = "Menu";
                     break;
-                case 1: str = "Phải (Dự án cấp 2)";
+                case 1: str = "Left";
                     break;
-                case 10: str = "Trên và Phải(Dự án cấp 2)";
+                case 2: str = "Menu & Left";
+                    break;
+                case 10: str = "Other";
                     break;
             }
             return str;            
@@ -356,7 +358,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[8].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn xóa?');");
+                e.Item.Cells[8].Attributes.Add("onClick", "return confirm('Bạn có chắc chắn Delete?');");
             }
 
         }
