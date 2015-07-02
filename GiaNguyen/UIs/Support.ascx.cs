@@ -28,7 +28,7 @@ namespace YeuThietKeWeb.UIs
                 }
                 if (list[i].ONLINE_TYPE == 1)
                 {
-                    lblSupport.Text += "<p class='nick_chat'><a href='skype:" + list[i].ONLINE_NICKNAME + "?call' title=''><img src='http://mystatus.skype.com/smallclassic/" + list[i].ONLINE_NICKNAME + "' title=''  alt='' ></a></p>";
+                    lblSupport.Text += "<p class='nick_chat'><a href='skype:" + list[i].ONLINE_NICKNAME + "?chat' title=''><img src='/vi-vn/Images/skype_status.png' title=''  alt='' ></a></p>";
                 }
                 if (list[i].ONLINE_TYPE == 2)
                 {
